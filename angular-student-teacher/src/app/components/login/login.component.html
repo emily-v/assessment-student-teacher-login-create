@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row mt-2 mt-md-4">
+    <div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h3 class="card-title text-center">Welcome to Revature @ USF!</h3>
+          <h4 class="card-text text-center">Please log in or create an account to continue</h4>
+          <br><br>
+        <!-- <form #loginForm="ngForm" (ngSubmit)="testLogin()">  -->
+        <form #loginForm="ngForm" (ngSubmit)="loginUser()"> 
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  name="email" 
+                  nameun="ngModel"
+                  [(ngModel)]="email"
+                  required
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                  type="password" 
+                  class="form-control" 
+                  name="password" 
+                  namepw="ngModel"
+                  [(ngModel)]="password"
+                  required
+                  placeholder="Enter password">
+              </div>
+              <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary btn-block mb-1">Login</button>
+            </form>
+            <button type="button" [routerLink]="['/new-student']" class="btn btn-primary btn-block">Create an account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

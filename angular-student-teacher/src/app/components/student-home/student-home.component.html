@@ -1,0 +1,35 @@
+<div class="container pt-4">
+  <div (click)="logout()" class="text-right">Logout</div>
+  <div class="row mt-4">
+    <div class="col-9 col-lg-6 mx-auto text-center">
+      <h2>Welcome {{ firstName }}!</h2>
+      <h3>Here is your student schedule</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Class Name</th>
+            <th scope="col">Class Time</th>
+            <th scope="col">Days</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Introduction to Food Science</th>
+            <td>10:00-11:00</td>
+            <td>M, W, F</td>
+          </tr>
+          <tr>
+            <th scope="row">Metabolism</th>
+            <td>1:30-3:00</td>
+            <td>Tu, Th</td>
+          </tr>
+          <tr>
+            <th scope="row">Medical Nutrition Therapy</th>
+            <td>6:00-7:00</td>
+            <td>M, W, F</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
