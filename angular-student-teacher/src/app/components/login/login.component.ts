@@ -30,7 +30,6 @@ export class LoginComponent implements OnInit {
 
   routeToHome() {
     this.roleId = JSON.parse(localStorage.getItem('currUser')).role.roleId;
-    console.log(this.roleId);
     if (this.roleId === 1) {
       this.router.navigate(['student-home']);
     } else if (this.roleId === 2) {
